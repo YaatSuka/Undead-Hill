@@ -22,11 +22,6 @@ public class HandgunScriptLPFP : MonoBehaviour {
 
 	public float aimFov = 15.0f;
 
-	[Header("UI Weapon Name")]
-	[Tooltip("Name of the current weapon, shown in the game UI.")]
-	public string weaponName;
-	private string storedWeaponName;
-
 	[Header("Weapon Sway")]
 	//Enables weapon sway
 	[Tooltip("Toggle weapon sway.")]
@@ -167,10 +162,6 @@ public class HandgunScriptLPFP : MonoBehaviour {
 	}
 
 	private void Start () {
-		//Save the weapon name
-		storedWeaponName = weaponName;
-		//Get weapon name from string to text
-		currentWeaponText.text = weaponName;
 		//Set total ammo text from total ammo int
 		totalAmmoText.text = ammo.ToString();
 
@@ -300,8 +291,6 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		//If out of ammo
 		if (currentAmmo == 0) 
 		{
-			//Show out of ammo text
-			currentWeaponText.text = "OUT OF AMMO";
 			//Toggle bool
 			outOfAmmo = true;
 			//Auto reload if true
@@ -317,8 +306,6 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		} 
 		else 
 		{
-			//When ammo is full, show weapon name again
-			currentWeaponText.text = storedWeaponName.ToString ();
 			//Toggle bool
 			outOfAmmo = false;
 			//anim.SetBool ("Out Of Ammo", false);
