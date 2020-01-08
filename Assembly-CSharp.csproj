@@ -56,6 +56,7 @@
      <Compile Include="Assets\Low Poly FPS Pack - Free (Sample)\Components\Scripts\Weapon_Scripts\AutomaticGunScriptLPFP.cs" />
      <Compile Include="Assets\Low Poly FPS Pack - Free (Sample)\Components\Scripts\Weapon_Scripts\HandgunScriptLPFP.cs" />
      <Compile Include="Assets\Zombie\Scripts\TargetScript.cs" />
+     <None Include="Assets\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/Tom/Desktop/UVIC/Courses/Semester 1/Videogame Programming 3D/final-project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
