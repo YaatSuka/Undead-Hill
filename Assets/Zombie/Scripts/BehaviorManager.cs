@@ -29,12 +29,12 @@ public class BehaviorManager : MonoBehaviour
         distance = Vector3.Distance(player.transform.position, transform.position);
         if (distance <= runDistance && distance > hitDistance) {
             animator.Play("Z_Run_InPlace");
-            bipedComponent.MaxSpeed = 3;
+            bipedComponent.MaxSpeed = 4;
         } else if (distance <= hitDistance) {
             animator.Play("Z_Attack");
         } else {
             animator.Play("Z_Walk_InPlace");
-            bipedComponent.MaxSpeed = 1;
+            bipedComponent.MaxSpeed = 2;
         }
 
         //Debug.Log(distance);

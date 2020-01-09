@@ -97,6 +97,7 @@
      <Compile Include="Assets\Packages\UnitySteer-development\Attributes\Vector3ToggleAttribute.cs" />
      <Compile Include="Assets\Packages\UnitySteer-development\TickedPriorityQueue\UnityTickedQueue.cs" />
      <Compile Include="Assets\Zombie\Scripts\BehaviorManager.cs" />
+     <Compile Include="Assets\Zombie\Scripts\SpawnZombie.cs" />
      <Compile Include="Assets\Zombie\Scripts\TargetScript.cs" />
      <None Include="Assets\Packages\UnitySteer-development\TickedPriorityQueue\LICENSE.txt" />
      <None Include="Assets\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
