@@ -90,17 +90,12 @@ public class GrenadeScript : MonoBehaviour {
 			if (hit.GetComponent<Collider>().tag == "Target" 
 			    	&& hit.gameObject.GetComponent<TargetScript>().isHit == false) 
 			{
-				//Animate the target 
-				hit.gameObject.GetComponent<Animation> ().Play("target_down");
 				//Toggle "isHit" on target object
 				hit.gameObject.GetComponent<TargetScript>().isHit = true;
 			}
 
-			//If the explosion hits "ExplosiveBarrel" tag
-			if (hit.GetComponent<Collider>().tag == "ExplosiveBarrel") 
-			{
-				//Toggle "explode" on explosive barrel object
-				hit.gameObject.GetComponent<ExplosiveBarrelScript> ().explode = true;
+			if (hit.GetComponent<Collider>().tag == "Player") {
+				// Manage player life points
 			}
 		}
 
