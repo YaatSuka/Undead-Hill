@@ -95,7 +95,7 @@ public class GrenadeScript : MonoBehaviour {
 			}
 
 			if (hit.GetComponent<Collider>().tag == "Player") {
-				// Manage player life points
+      		  hit.gameObject.GetComponent<LifeManager>().Ghit = true;
 			}
 		}
 

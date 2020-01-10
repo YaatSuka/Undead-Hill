@@ -23,7 +23,7 @@ public class SpawnZombie : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer > 60f && spawnRatio > 3f) {
+        if (timer > 30f && spawnRatio > 3f) {
             spawnRatio -= 0.5f;
             timer = 0;
         }
